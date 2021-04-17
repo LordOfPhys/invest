@@ -20,6 +20,13 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^registration', views.registration, name='registration'),
-    url(r'^login', views.login, name='login'),
+    url(r'^auth/registration', views.registration, name='registration'),
+    url(r'^auth/login', views.login, name='login'),
+    url(r'^profile/logout', views.logout, name='logout'),
+    url(r'^invest_item', views.get_invest_item, name='invest_item'),
+    url(r'^team_item', views.get_team_item, name = 'team_item'),
+    url(r'^change_profile', views.change_profile, name='change_profile'),
+    url(r'^get_profile', views.get_profile, name='get_profile'),
+    url(r'^main_invest', views.main_invest, name='main_invest'),
+    url(r'^main_team', views.main_team, name='main_team'),
 ]
