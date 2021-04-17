@@ -1,0 +1,15 @@
+[0;1;31m●[0m gunicorn.service - gunicorn daemon
+     Loaded: loaded (/etc/systemd/system/gunicorn.service; disabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Thu 2021-02-04 17:30:24 MSK; 2min 48s ago
+TriggeredBy: [0;1;31m●[0m gunicorn.socket
+    Process: 159994 ExecStart=/home/root/invest/investenv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock investenv.wsgi:application [0;1;31m(code=exited, status=200/CHDIR)[0m
+   Main PID: 159994 (code=exited, status=200/CHDIR)
+
+Feb 04 17:30:24 5-63-157-3.cloudvps.regruhosting.ru systemd[1]: Started gunicorn daemon.
+Feb 04 17:30:24 5-63-157-3.cloudvps.regruhosting.ru systemd[159994]: [0;1;31m[0;1;39m[0;1;31mgunicorn.service: Changing to the requested working directory failed: No such file or directory[0m
+Feb 04 17:30:24 5-63-157-3.cloudvps.regruhosting.ru systemd[159994]: [0;1;31m[0;1;39m[0;1;31mgunicorn.service: Failed at step CHDIR spawning /home/root/invest/investenv/bin/gunicorn: No such file or directory[0m
+Feb 04 17:30:24 5-63-157-3.cloudvps.regruhosting.ru systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Main process exited, code=exited, status=200/CHDIR[0m
+Feb 04 17:30:24 5-63-157-3.cloudvps.regruhosting.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Feb 04 17:30:24 5-63-157-3.cloudvps.regruhosting.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Start request repeated too quickly.[0m
+Feb 04 17:30:24 5-63-157-3.cloudvps.regruhosting.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Feb 04 17:30:24 5-63-157-3.cloudvps.regruhosting.ru systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gunicorn daemon.[0m
